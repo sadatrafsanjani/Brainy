@@ -119,21 +119,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/resultView"
+        android:textSize="50sp"
+        android:textColor="#ffffff"
         android:layout_below="@+id/gridLayout"
         android:layout_centerHorizontal="true"
-        android:textSize="50sp"
-        android:textColor="#ffffff" />
+        android:layout_marginTop="60dp" />
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Again"
         android:id="@+id/playButton"
-        android:layout_below="@+id/resultView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="33dp"
         android:onClick="playAgain"
         android:visibility="invisible"
-        android:background="#f8fb6a" />
+        android:background="#f8fb6a"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/timerView"
+        android:layout_alignStart="@+id/timerView"
+        android:layout_marginBottom="48dp" />
 
 </RelativeLayout>

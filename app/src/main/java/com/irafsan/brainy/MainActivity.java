@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
         score = 0;
         level = 0;
-        timerView.setText("30s");
+        timerView.setText("10s");
         scoreView.setText("0/0");
         resultView.setText("");
         playButton.setVisibility(View.INVISIBLE);
@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void setTimer(){
 
-        timer = new CountDownTimer(10000,1000){
+        timer = new CountDownTimer(3000,1000){
 
             public void onTick(long millisUntilFinished) {
                 timerView.setText(String.valueOf(millisUntilFinished/1000) + "s");
